@@ -3,15 +3,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | Hexo</title>
-    <meta name="author" content="John Doe" />
+    <title>Archives | LChuanのブログ</title>
+    <meta name="author" content="LChuanAkane" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="icon" href="/images/lchuan.jpg" />
     <link rel="preconnect" href="https://s4.zstatic.net" />
 <script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -59,7 +59,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>HEXO</span>
+            <span>LCHUANのブログ</span>
         </a>
         
         <a href="/">
@@ -91,7 +91,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;HEXO</span>
+            <span>&emsp;LCHUANのブログ</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -159,7 +159,7 @@
             <div class="timeline-tail"></div>
             <div class="timeline-content">
                 <div class="item-time">2025/8/8</div>
-                <a href="/2025/08/08/%E5%9C%A8Windows%E4%B8%8AVue%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/">
+                <a href="/2025/08/08/%E5%9C%A8Windows%E4%B8%8AVue-intro/">
                     <h3>在Windows上Vue-intro</h3>
                 </a>
                 <div class="info">
@@ -182,7 +182,7 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/Vue/" style="color: #ff7d73">
+                            <a href="/tags/Vue/" style="color: #03a9f4">
                                 Vue
                             </a>
                         </span>
@@ -196,7 +196,7 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/JavaScript/" style="color: #00a596">
+                            <a href="/tags/JavaScript/" style="color: #ffa2c4">
                                 JavaScript
                             </a>
                         </span>
@@ -214,11 +214,11 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2025 Hexo
+            2022 - 2025 LChuanのブログ
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
-            &commat;John Doe
+            &commat;LChuanAkane
         </div>
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
@@ -239,5 +239,19 @@
     </div>
     <script src="/js/main.js"></script>
     
+    <canvas
+    id="fireworks"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 32767"
+></canvas>
+<script src="https://s4.zstatic.net/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://static-argvchs.netlify.app/js/fireworks.min.js"></script>
+<canvas
+    id="background"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1"
+></canvas>
+<script src="https://static-argvchs.netlify.app/js/background.min.js"></script>
+<div id="cursor"></div>
+<link rel="stylesheet" href="https://static-argvchs.netlify.app/css/cursor.min.css" />
+<script src="https://static-argvchs.netlify.app/js/cursor.min.js"></script>
 </body>
 </html>
