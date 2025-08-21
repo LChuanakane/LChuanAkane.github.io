@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>在Windows上Vue-intro | LChuanのブログ</title>
+    <title>在GitHub上搭建Hexo环境(Windows) | LChuanのブログ</title>
     <meta name="author" content="LChuanAkane" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -156,22 +156,22 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>在Windows上Vue-intro</h1>
+        <h1>在GitHub上搭建Hexo环境(Windows)</h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/8/8
+            2025/8/22
         </span>
         
         <span class="category">
-            <a href="/categories/Vue-%E7%B3%BB%E5%88%97%E5%BD%92%E7%BA%B3/">
+            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                Vue 系列归纳
+                博客教程
             </a>
         </span>
         
@@ -184,22 +184,22 @@
             
             <span class="tag">
                 
-                <a href="/tags/Vue/" style="color: #00a596">
-                    Vue
+                <a href="/tags/GitHub/" style="color: #ffa2c4">
+                    GitHub
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/" style="color: #ffa2c4">
-                    前端框架
+                <a href="/tags/Hexo/" style="color: #00a596">
+                    Hexo
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/JavaScript/" style="color: #03a9f4">
-                    JavaScript
+                <a href="/tags/Netlify/" style="color: #ffa2c4">
+                    Netlify
                 </a>
             </span>
             
@@ -208,29 +208,64 @@
     </div>
     
     <div class="content" v-pre>
-        <p>Vue是一款流行的渐进式JavaScript框架，专注于构建用户界面。它的核心库只关注视图层，易于上手，适合构建单页应用（SPA）。本章节主要讲述在正式进入Vue实战内容之前关于Vue项目运行的地基。<span id="more"></span></p>
-<blockquote>
-<h2 id="1-Node-js基础"><a href="#1-Node-js基础" class="headerlink" title="1.Node.js基础"></a>1.Node.js基础</h2><h3 id="Node-js是什么-🤣"><a href="#Node-js是什么-🤣" class="headerlink" title="Node.js是什么?🤣"></a>Node.js是什么?🤣</h3><ul>
-<li>JavaScript运行时环境（运行js时不依赖浏览器）</li>
-</ul>
-<ul>
-<li>JavaScript 本来是浏览器里的语言，负责网页上的交互，比如按钮点击、动画效果等。<br><strong><ins>Node.js 让你能在浏览器外，也就是服务器端运行 JavaScript。</ins></strong></li>
-</ul>
-<p>它基于 Chrome 浏览器的 V8 引擎（解析和执行 JS 的引擎），速度很快。	用 Node.js 可以做很多事情，比如搭建网站后台服务器、写命令行工具、处理文件、做网络请求等。<br>打个比方：以前你用 JavaScript 只能“给网页穿衣服”（做页面交互）有了 Node.js，你可以用 JavaScript“造房子、修路、开店铺”（做服务器、工具、应用程序）你如果想做网页后台开发、或者用 JS 写一些自动化脚本，Node.js 就非常重要。</p>
-</blockquote>
-<blockquote>
-<h3 id="Node-js具体能做什么-🤔"><a href="#Node-js具体能做什么-🤔" class="headerlink" title="Node.js具体能做什么?🤔"></a>Node.js具体能做什么?🤔</h3><ul>
-<li>运行构建工具(如webpack，vite)</li>
-<li>写后端服务(Express,Nest)</li>
-<li>管理本地工具(如Vue CLI)</li>
-</ul>
-</blockquote>
-<blockquote>
-<h3 id="🌼常用命令"><a href="#🌼常用命令" class="headerlink" title="🌼常用命令"></a><strong>🌼常用命令</strong></h3><ul>
-<li>node -v:查看node版本</li>
-<li>node filename.js:运行js脚本</li>
-</ul>
-</blockquote>
+        <h2 id="🚨Hexo概述"><a href="#🚨Hexo概述" class="headerlink" title="🚨Hexo概述"></a>🚨Hexo概述</h2><p>Hexo 是一个快速、简洁且高效的静态博客框架，特别适合用来搭建个人博客或技术文档站点。它使用 Markdown 编写文章，通过渲染生成静态网页，最后部署到如 GitHub Pages、Vercel、Netlify 等平台上.其特点是使用 Node.js 编写，性能优秀，生成页面速度快，丰富的主题和插件系统，用户可自定义站点外观与功能可一键部署至 GitHub Pages、Vercel、Netlify 等平台有许多第三方主题、插件，文档齐全，是我们整理总结资料的好帮手<span id="more"></span></p>
+<h2 id="🔧-Hexo-的基本工作流程"><a href="#🔧-Hexo-的基本工作流程" class="headerlink" title="🔧 Hexo 的基本工作流程"></a>🔧 Hexo 的基本工作流程</h2><h3 id="1️⃣-安装必备工具"><a href="#1️⃣-安装必备工具" class="headerlink" title="1️⃣ 安装必备工具"></a>1️⃣ 安装必备工具</h3><p>在你的电脑上安装:<br>    •	Node.js (建议 LTS 版本)<br>    •	Git(例版本2.49.0.windows.1)<br>    •	在GitHub 创建仓库，名字建议：你的用户名.github.io<br>（以我的为例：lchuanakane.github.io）</p>
+<h3 id="2️⃣-初始化-Hexo-博客项目"><a href="#2️⃣-初始化-Hexo-博客项目" class="headerlink" title="2️⃣ 初始化 Hexo 博客项目"></a>2️⃣ 初始化 Hexo 博客项目</h3><p>打开终端安装 Hexo:</p>
+<div style="position: relative;">
+<pre><code class="bash">
+npm install -g
+<br>hexo-cl</br>
+</code>
+</pre>
+</div>
+
+<h4 id="创建博客文件夹"><a href="#创建博客文件夹" class="headerlink" title="创建博客文件夹"></a>创建博客文件夹</h4><p><em><strong>hexo init myblog</strong></em><br><em><strong>cd myblog</strong></em></p>
+<h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><p><em><strong>npm install</strong></em></p>
+<h3 id="3️⃣-本地启动博客"><a href="#3️⃣-本地启动博客" class="headerlink" title="3️⃣ 本地启动博客"></a>3️⃣ 本地启动博客</h3><div style="position: relative;">
+<pre><code class="bash">
+hexo s(server)
+</code>
+</pre>
+</div>
+
+
+<p><em><strong>打开浏览器访问 <a href="http://localhost:4000，就能看到初始博客页面（在终端按住ctrl点击即可访问）">http://localhost:4000，就能看到初始博客页面（在终端按住ctrl点击即可访问）</a></strong></em></p>
+<h3 id="4️⃣-生成静态文件"><a href="#4️⃣-生成静态文件" class="headerlink" title="4️⃣ 生成静态文件"></a>4️⃣ 生成静态文件</h3><p>***hexo g (generate)***\</p>
+<p><em><strong>生成的文件会放在 public&#x2F; 文件夹，里面会有你截图类似的结构(index.html、文章文件夹、css、js 等).</strong></em></p>
+<h3 id="5️⃣-部署到-GitHub-Pages"><a href="#5️⃣-部署到-GitHub-Pages" class="headerlink" title="5️⃣ 部署到 GitHub Pages"></a>5️⃣ 部署到 GitHub Pages</h3><h4 id="⚠️安装部署插件："><a href="#⚠️安装部署插件：" class="headerlink" title="⚠️安装部署插件：\"></a><em><strong>⚠️安装部署插件：</strong></em>\</h4><p><em><strong>npm install hexo-deployer-git –save</strong></em></p>
+<p><em><strong>‼️‼️编辑 _config.yml（在博客根目录）：</strong></em><br><em><strong>当你完成 hexo init myblog 后，进入该文件夹：</strong></em></p>
+<p>*<strong>cd C:\Users\你的用户名\myblog*</strong><br>推荐使用 VS Code打开编辑,输入code _config.yml找到 deploy 部分，改成:\</p>
+<p>***deploy:***<br><em><strong>type: git</strong></em><br><em><strong>repo: <a target="_blank" rel="noopener" href="https://github.com/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D.github.io.git">https://github.com/你的用户名/你的用户名.github.io.git</a></strong></em><br><em><strong>branch: main（或master）</strong></em><br><em><strong>首尾缩进空格</strong></em><br>然后在终端输入:</p>
+<p><em><strong>hexo clean   # 清理旧文件</strong></em><br><em><strong>hexo g（generate）       # 重新生成网页</strong></em><br><em><strong>hexo d（deploy）# 部署到线上</strong></em><br><em><strong>hexo s（server）#本地预览，运行服务器</strong></em>\</p>
+<h4 id="6️⃣-开启新文章"><a href="#6️⃣-开启新文章" class="headerlink" title="6️⃣ 开启新文章"></a>6️⃣ 开启新文章</h4><p>cd mylogs   #切换到mylogs目录</p>
+<p>hexo new “文章标题”   #新建文档</p>
+<p>再执行：<br>hexo g -d<br>你会发现此时在source&#x2F;_posts&#x2F;路径下生成一个文件例如：<br>source&#x2F;_posts&#x2F;文章标题.md</p>
+<p>由于Hexo 是一个 静态博客生成器，它的工作方式就是把你写的 Markdown 文件（文章）+ 主题模板 → 生成 纯 HTML&#x2F;CSS&#x2F;JS 静态网页。所以你写完文章后，必须执行：</p>
+<p>然后编辑 source&#x2F;_posts&#x2F;文章标题.md（建议用VScode打开编写文章），打开后你将看到这一段文字叫做 Front Matter，是 Hexo 用来识别文章信息的地方：</p>
+<hr>
+<h2 id="title：你的文章名date：文档创建时间tags：标签（可选）"><a href="#title：你的文章名date：文档创建时间tags：标签（可选）" class="headerlink" title="title：你的文章名date：文档创建时间tags：标签（可选）"></a>title：你的文章名<br>date：文档创建时间<br>tags：标签（可选）</h2><p>✍️ 在 — 下面写你的正文内容，使用Markdown 的语法来写标题、列表、代码块、图片等等。</p>
+<p>✅ 编辑完成后，查看文章：<br>hexo s 看看你的文章是否正常显示</p>
+<h4 id="7️⃣如何删除文章"><a href="#7️⃣如何删除文章" class="headerlink" title="7️⃣如何删除文章"></a>7️⃣如何删除文章</h4><p>非常简单，你只需要删除对应的 .md 文件即可。假设你要删除一篇名为 my-first-post.md的文章：<br>1.	定位文章文件夹<br>进入 Hexo 项目目录中的 source&#x2F;_posts&#x2F; 文件夹：</p>
+<p>cd your-blog-folder&#x2F;source&#x2F;_posts&#x2F;</p>
+<ol start="2">
+<li><p>   删除文章 Markdown 文件</p>
+<div style="position: relative;">
+<pre><code class="bash">
+</code>del my-first-post.md</pre>
+</div>
+</li>
+<li><p>   重新生成静态文件<br>删除文章后，要让网站更新，需要重新生成：<br>hexo clean<br>hexo g</p>
+</li>
+</ol>
+<p>4.预览本地网站确认删除效果<br>hexo s<br>然后打开浏览器访问 <a href="http://localhost:4000，确认文章已不再显示。">http://localhost:4000，确认文章已不再显示。</a></p>
+<p>5.重新部署到线上</p>
+<div style="position: relative;">
+<pre><code class="bash">
+</code>hexo d</pre>
+</div>
+
+<p>📁Hexo 项目结构（文件夹类型）</p>
+<p>source&#x2F;_posts&#x2F;<br>存放所有文章（Markdown 文件）<br>themes&#x2F;<br>主题目录<br>public&#x2F;<br>Hexo 生成的静态文件（可部署）<br>_config.yml<br>全局配置文件<br>scaffolds&#x2F;<br>文章模板结构<br>📁想在hexo博客里插入音频，视频？<br>推荐上传到github里生成可应用链接<br>    1下好插件<br>    •	进入仓库 → 点击 Add file → Upload files → 选择你的 mp3 文件上传 → Commit。<br>    3.	获取 Raw 链接<br>    •	上传完成后，点击文件 → 点击 Raw 按钮 → 地址栏就是 mp3 的直接访问链接，例如：</p>
 
     </div>
     
