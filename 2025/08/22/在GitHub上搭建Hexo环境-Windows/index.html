@@ -191,14 +191,14 @@
             
             <span class="tag">
                 
-                <a href="/tags/Hexo/" style="color: #00bcd4">
+                <a href="/tags/Hexo/" style="color: #ffa2c4">
                     Hexo
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/Netlify/" style="color: #ffa2c4">
+                <a href="/tags/Netlify/" style="color: #ff7d73">
                     Netlify
                 </a>
             </span>
@@ -213,14 +213,25 @@
 <h3 id="2️⃣-初始化-Hexo-博客项目"><a href="#2️⃣-初始化-Hexo-博客项目" class="headerlink" title="2️⃣ 初始化 Hexo 博客项目"></a>2️⃣ 初始化 Hexo 博客项目</h3><p>打开终端安装 Hexo:</p>
 <div style="position: relative;">
 <pre><code class="bash">
-npm install -g
-<br>hexo-cl</br>
+npm install -g hexo-cl
 </code>
 </pre>
 </div>
 
-<h4 id="创建博客文件夹"><a href="#创建博客文件夹" class="headerlink" title="创建博客文件夹"></a>创建博客文件夹</h4><p><em><strong>hexo init myblog</strong></em><br><em><strong>cd myblog</strong></em></p>
-<h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><p><em><strong>npm install</strong></em></p>
+<h4 id="创建博客文件夹"><a href="#创建博客文件夹" class="headerlink" title="创建博客文件夹"></a>创建博客文件夹</h4><div style="position: relative;">
+<pre><code class="bash">
+hexo init myblog cd myblog
+</code>
+</pre>
+</div>
+
+<h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><div style="position: relative;">
+<p><code class="bash">
+npm install
+</code>
+</p>
+</div>
+
 <h3 id="3️⃣-本地启动博客"><a href="#3️⃣-本地启动博客" class="headerlink" title="3️⃣ 本地启动博客"></a>3️⃣ 本地启动博客</h3><div style="position: relative;">
 <pre><code class="bash">
 hexo s(server)
@@ -230,16 +241,34 @@ hexo s(server)
 
 
 <p><em><strong>打开浏览器访问 <a href="http://localhost:4000，就能看到初始博客页面（在终端按住ctrl点击即可访问）">http://localhost:4000，就能看到初始博客页面（在终端按住ctrl点击即可访问）</a></strong></em></p>
-<h3 id="4️⃣-生成静态文件"><a href="#4️⃣-生成静态文件" class="headerlink" title="4️⃣ 生成静态文件"></a>4️⃣ 生成静态文件</h3><p>***hexo g (generate)***\</p>
+<h3 id="4️⃣-生成静态文件"><a href="#4️⃣-生成静态文件" class="headerlink" title="4️⃣ 生成静态文件"></a>4️⃣ 生成静态文件</h3><div style="position: relative;"><pre>
+<code class="bash">
+hexo g (generate)
+</code></pre>
+</div>
+
 <p><em><strong>生成的文件会放在 public&#x2F; 文件夹，里面会有你截图类似的结构(index.html、文章文件夹、css、js 等).</strong></em></p>
-<h3 id="5️⃣-部署到-GitHub-Pages"><a href="#5️⃣-部署到-GitHub-Pages" class="headerlink" title="5️⃣ 部署到 GitHub Pages"></a>5️⃣ 部署到 GitHub Pages</h3><h4 id="⚠️安装部署插件："><a href="#⚠️安装部署插件：" class="headerlink" title="⚠️安装部署插件：\"></a><em><strong>⚠️安装部署插件：</strong></em>\</h4><p><em><strong>npm install hexo-deployer-git –save</strong></em></p>
+<h3 id="5️⃣-部署到-GitHub-Pages"><a href="#5️⃣-部署到-GitHub-Pages" class="headerlink" title="5️⃣ 部署到 GitHub Pages"></a>5️⃣ 部署到 GitHub Pages</h3><h4 id="⚠️安装部署插件："><a href="#⚠️安装部署插件：" class="headerlink" title="⚠️安装部署插件："></a><em><strong>⚠️安装部署插件：</strong></em></h4><div style="position: relative;">
+<pre><code class="bash">
+npm install hexo-deployer-git --save
+</code></pre>
+</div>
+
 <p><em><strong>‼️‼️编辑 _config.yml（在博客根目录）：</strong></em><br><em><strong>当你完成 hexo init myblog 后，进入该文件夹：</strong></em></p>
-<p>*<strong>cd C:\Users\你的用户名\myblog*</strong><br>推荐使用 VS Code打开编辑,输入code _config.yml找到 deploy 部分，改成:\</p>
+<div style="position: relative;">
+<pre><code class="bash">
+cd C:\Users\你的用户名\myblog\
+</code>
+</pre>
+</div>
+推荐使用 VS Code打开编辑,输入code _config.yml找到 deploy 部分，改成:\
+
 <p>***deploy:***<br><em><strong>type: git</strong></em><br><em><strong>repo: <a target="_blank" rel="noopener" href="https://github.com/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D.github.io.git">https://github.com/你的用户名/你的用户名.github.io.git</a></strong></em><br><em><strong>branch: main（或master）</strong></em><br><em><strong>首尾缩进空格</strong></em><br>然后在终端输入:</p>
 <p><em><strong>hexo clean   # 清理旧文件</strong></em><br><em><strong>hexo g（generate）       # 重新生成网页</strong></em><br><em><strong>hexo d（deploy）# 部署到线上</strong></em><br><em><strong>hexo s（server）#本地预览，运行服务器</strong></em>\</p>
 <h4 id="6️⃣-开启新文章"><a href="#6️⃣-开启新文章" class="headerlink" title="6️⃣ 开启新文章"></a>6️⃣ 开启新文章</h4><p>cd mylogs   #切换到mylogs目录</p>
 <p>hexo new “文章标题”   #新建文档</p>
-<p>再执行：<br>hexo g -d<br>你会发现此时在source&#x2F;_posts&#x2F;路径下生成一个文件例如：<br>source&#x2F;_posts&#x2F;文章标题.md</p>
+<p>再执行：</p>
+<p>hexo g -d<br>你会发现此时在source&#x2F;_posts&#x2F;路径下生成一个文件例如：<br>source&#x2F;_posts&#x2F;文章标题.md</p>
 <p>由于Hexo 是一个 静态博客生成器，它的工作方式就是把你写的 Markdown 文件（文章）+ 主题模板 → 生成 纯 HTML&#x2F;CSS&#x2F;JS 静态网页。所以你写完文章后，必须执行：</p>
 <p>然后编辑 source&#x2F;_posts&#x2F;文章标题.md（建议用VScode打开编写文章），打开后你将看到这一段文字叫做 Front Matter，是 Hexo 用来识别文章信息的地方：</p>
 <hr>
@@ -254,8 +283,12 @@ hexo s(server)
 </code>del my-first-post.md</pre>
 </div>
 </li>
-<li><p>   重新生成静态文件<br>删除文章后，要让网站更新，需要重新生成：<br>hexo clean<br>hexo g</p>
-</li>
+<li><p>   重新生成静态文件<br>删除文章后，要让网站更新，需要重新生成：</p>
+<div style="position: relative;">
+<pre><code class="bash">
+</code>hexo clean
+<br>hexo g</br></pre>
+</div></li>
 </ol>
 <p>4.预览本地网站确认删除效果<br>hexo s<br>然后打开浏览器访问 <a href="http://localhost:4000，确认文章已不再显示。">http://localhost:4000，确认文章已不再显示。</a></p>
 <p>5.重新部署到线上</p>
