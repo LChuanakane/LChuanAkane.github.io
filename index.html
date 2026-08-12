@@ -3,15 +3,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>LChuanのブログ</title>
-    <meta name="author" content="LChuanAkane" />
+    <title>Hexo</title>
+    <meta name="author" content="John Doe" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <link rel="icon" href="/images/lchuan.jpg" />
+    <link rel="icon" href="/images/avatar.jpg" />
     <link rel="preconnect" href="https://s4.zstatic.net" />
 <script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -61,7 +61,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>LCHUANのブログ</span>
+            <span>HEXO</span>
         </a>
         
         <a href="/">
@@ -93,7 +93,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;LCHUANのブログ</span>
+            <span>&emsp;HEXO</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -156,7 +156,7 @@
     <div
         id="home-background"
         ref="homeBackground"
-        data-images="/images/background.gif"
+        data-images="/images/background.jpg"
     ></div>
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
@@ -165,7 +165,7 @@
         <span class="loop"></span>
         <span class="info">
             <div class="wrap">
-                <h1>LChuanのブログ</h1>
+                <h1>Hexo</h1>
                 <h3></h3>
                 <h5></h5>
             </div>
@@ -181,25 +181,16 @@
         
 
 <div class="post">
-    <a href="/2025/08/22/%E5%9C%A8GitHub%E4%B8%8A%E6%90%AD%E5%BB%BAHexo%E7%8E%AF%E5%A2%83-Windows/">
-        <h2 class="post-title">在GitHub上搭建Hexo环境(Windows)</h2>
+    <a href="/2025/08/02/hello-world/">
+        <h2 class="post-title">Hello World</h2>
     </a>
     <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                博客教程
-            </a>
-        </span>
         
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/8/22
+            2025/8/2
         </span>
         
         
@@ -207,93 +198,29 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <h2 id="🚨Hexo概述"><a href="#🚨Hexo概述" class="headerlink" title="🚨Hexo概述"></a>🚨Hexo概述</h2><p>Hexo 是一个快速、简洁且高效的静态博客框架，特别适合用来搭建个人博客或技术文档站点。它使用 Markdown 编写文章，通过渲染生成静态网页，最后部署到如 GitHub Pages、Vercel、Netlify 等平台上.其特点是使用 Node.js 编写，性能优秀，生成页面速度快，丰富的主题和插件系统，用户可自定义站点外观与功能可一键部署至 GitHub Pages、Vercel、Netlify 等平台有许多第三方主题、插件，文档齐全，是我们整理总结资料的好帮手
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/GitHub/" style="color: #ff7d73">GitHub</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/Hexo/" style="color: #00bcd4">Hexo</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/Netlify/" style="color: #ffa2c4">Netlify</a>
-        </span>
-        
-    </div>
-    <a href="/2025/08/22/%E5%9C%A8GitHub%E4%B8%8A%E6%90%AD%E5%BB%BAHexo%E7%8E%AF%E5%A2%83-Windows/" class="go-post">阅读全文</a>
-</div>
+            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<div class="post">
-    <a href="/2025/08/08/%E5%9C%A8Windows%E4%B8%8AVue-intro/">
-        <h2 class="post-title">在Windows上Vue-intro</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/Vue-%E7%B3%BB%E5%88%97%E5%BD%92%E7%BA%B3/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                Vue 系列归纳
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2025/8/8
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>Vue是一款流行的渐进式JavaScript框架，专注于构建用户界面。它的核心库只关注视图层，易于上手，适合构建单页应用（SPA）。本章节主要讲述在正式进入Vue实战内容之前关于Vue项目运行的地基。
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
             
         </div>
     </div>
     <div class="post-tags">
         
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
         
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/Vue/" style="color: #ffa2c4">Vue</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/" style="color: #00bcd4">前端框架</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/JavaScript/" style="color: #00a596">JavaScript</a>
-        </span>
         
     </div>
-    <a href="/2025/08/08/%E5%9C%A8Windows%E4%B8%8AVue-intro/" class="go-post">阅读全文</a>
+    <a href="/2025/08/02/hello-world/" class="go-post">阅读全文</a>
 </div>
 
 
@@ -312,11 +239,11 @@
         <div id="card-style">
     <div id="card-div">
         <div class="avatar">
-            <img src="/images/lchuan.jpg" alt="avatar" />
+            <img src="/images/avatar.jpg" alt="avatar" />
         </div>
-        <div class="name">LChuanAkane</div>
+        <div class="name">John Doe</div>
         <div class="description">
-            <p>🎓 大三在读，重生之我在 GitHub 学习 JavaScript并为生活添砖Java 🍓</p>
+            <p>Description<br>…</p>
 
         </div>
         
@@ -324,135 +251,7 @@
         <div class="friend-links">
             
             <div class="friend-link">
-                <a href="/h">0</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/t">1</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/t">2</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/p">3</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/s">4</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/:">5</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/">6</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/">7</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/x">8</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/.">9</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/c">10</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/o">11</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/m">12</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/">13</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/d">14</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/o">15</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/c">16</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/u">17</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/m">18</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/e">19</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/n">20</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/t">21</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/w">22</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/r">23</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/i">24</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/t">25</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/e">26</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/_">27</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/?">28</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/s">29</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/=">30</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/2">31</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/1">32</a>
+                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Argvchs</a>
             </div>
             
         </div>
@@ -468,11 +267,11 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2026 LChuanのブログ
+            2022 - 2025 Hexo
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
-            &commat;LChuanAkane
+            &commat;John Doe
         </div>
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
@@ -493,20 +292,5 @@
     </div>
     <script src="/js/main.js"></script>
     
-<canvas
-    id="fireworks"
-    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 32767"
-></canvas>
-<script src="https://s4.zstatic.net/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-<script src="https://static-argvchs.netlify.app/js/fireworks.min.js"></script>
-<canvas
-    id="background"
-    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1"
-></canvas>
-<script src="https://static-argvchs.netlify.app/js/background.min.js"></script>
-<div id="cursor"></div>
-<link rel="stylesheet" href="https://static-argvchs.netlify.app/css/cursor.min.css" />
-<script src="https://static-argvchs.netlify.app/js/cursor.min.js"></script>
-
 </body>
 </html>
